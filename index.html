@@ -689,7 +689,7 @@ body{
             <input type="text" class="form-input" id="inp-zip" readonly placeholder="—">
           </div>
         </div>
-        <div class="form-hint">บ้านเลขที่, ซอย, ถนน, จุดสังเกต</div>
+        <div class="form-hint">บ้านเลขที่, หมู่บ้าน, ซอย,</div>
         <textarea class="form-area" id="inp-addr" placeholder="เช่น 123/45 หมู่ 6 ซอยสุขุมวิท..."></textarea>
 
         <div class="addr-confirmed" id="addrConfirmed">
@@ -8527,7 +8527,7 @@ async function submitForm() {
     '📍 สถานที่รับสินค้า: ' + addr + '\n' +
     (note ? '📝 หมายเหตุ: ' + note + '\n' : '') +
     '━━━━━━━━━━━━━━━━━━━━\n' +
-    '🔒 เงิน Escrow คุ้มครองอยู่';
+    '⚠️ สถานะ: รอติดต่อแอดมินเพื่อรับรหัส Seller ID';
 
   /* Update admin button link dynamically */
   updateAdminBtn(ref);
